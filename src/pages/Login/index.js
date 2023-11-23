@@ -12,18 +12,12 @@ import {
   Instrucoes
 } from "./styles";
 
-// 
-
-
-
 export default function Login ({ navigation }){
-
-  // const dispatch = useDispatch();
   const [usuario, setUsuario] = useState('');
   const [senha, setSenha] = useState('');
 
   function handleSubmit() {
-    console.log(`usuario: ${usuario} senha: ${senha}`)
+
     navigation.navigate("Principal")
   }
 

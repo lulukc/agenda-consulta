@@ -13,7 +13,6 @@ export default function Main ({ navigation }){
   const [destino, setDestino] = useState('');
 
   function handleButon(destino) {
-    console.log(destino)
     navigation.navigate(destino)
   }
 

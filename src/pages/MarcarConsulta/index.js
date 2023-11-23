@@ -9,7 +9,6 @@ export default function MarcarConsulta ({ route, navigation }){
   const [listaEspecialistas, setListaEspecialistas] = useState([]); 
 
   function handleButon(destino) {
-    console.log(destino)
     navigation.navigate(destino)
   }
 

@@ -59,17 +59,10 @@ export default function Simtomas ({ navigation }){
 
   function handleButon() {
     let listaIdString = "";
-
-    console.log(selectedData);
-
     selectedData.forEach((s)=>{
       listaIdString = listaIdString.concat(`${s.sintomaId},`)
     });
-    console.log(listaIdString);
     listaIdString = listaIdString.slice(0,listaIdString.length -1);
-
-    console.log(listaIdString);
-
     navigation.navigate("MarcarConsulta", {
       paramKey: listaIdString,
     });
@@ -78,10 +71,7 @@ export default function Simtomas ({ navigation }){
 
 
   function IncluirSintomasSelecionados(id, isAdicionar){
-    
-    console.log(isAdicionar)
     const selecionado = masterData.filter(item => item.sintomaId === id)
-
     if (isAdicionar) {
       setSelectedData([...selectedData , selecionado[0]])
     } else {
