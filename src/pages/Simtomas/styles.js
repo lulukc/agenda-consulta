@@ -43,7 +43,7 @@ export const TitleText = styled.Text`
 `;
 
 export const ItemView = styled.View`
-  background: #C0C0C0;
+  background: #DCDCDC;
   padding: 20px;
   padding: 8px 16px;
 `;
@@ -59,4 +59,3 @@ export const SintomasSelecionadosView = styled.View`
   width: 100%;
   max-height: 200px;
 `;
-

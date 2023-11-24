@@ -1,59 +1,53 @@
 import styled from "styled-components/native";
 import { RectButton } from 'react-native-gesture-handler';
 
-export const PrincipalView = styled.View`
+
+
+export const SubmitButton = styled(RectButton)`
+  align-self: stretch;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #ee4d64;
+  border-radius: 4px;
+  padding: 0 12px;
+  height: 44px;
+`;
+
+export const SubmitButtonText = styled.Text`
+  color: #eee;
+  font-size: 16px;
+  font-weight: bold;
+`;
+
+export const NomeText = styled.Text`
+  font-size: 20px;
+`;
+
+export const EspecialidadeView = styled.View`
   flex-direction: column;
   align-items: center;
   background-color : #F1F1F1;
   width: 100%;
-  flex: 1
+
 `;
-export const FormView = styled.View`
-  flex-direction: row;
-  align-items: center;
-  background-color : #5A6978;
-  padding: 30px;
+export const MensagemText = styled.Text`
+  font-size: 15px;
+
 `;
 
-export const TextoBoaVindas = styled.Text`
-  font-size: 45px;
-  margin: 15px;
-  font-weight: bold;
-  color: #fff;
+export const EspecialidadeText = styled.Text`
+  font-size: 20px;
+
 `;
 
+export const TitleText = styled.Text`
+  font-size: 15px;
 
-export const FormButton = styled(RectButton)`
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  background: #ee4d64;
-  border-radius: 6px;
-  padding: 10px 12px;
-  
 `;
 
-export const BotaoView = styled.View`
-  flex-direction: row ;
-  align-items: center;
-  background-color : #FFF;
-  justify-content: space-between ;
-  padding: 15px;
-`;
-
-export const Button = styled(RectButton)`
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  background: #ee4d64;
-  border-radius: 15px;
-  padding: 12px;
-  height: 100px;
-  width: 145px;
-`;
-
-export const ButtonText = styled.Text`
-  color: #eee;
-  font-size: 16px;
-  font-weight: bold;
+export const ItemView = styled.View`
+  padding: 20px;
+  padding: 8px 16px;
+  width: 100%;
 `;
